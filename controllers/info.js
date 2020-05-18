@@ -12,8 +12,4 @@ module.exports = {
     deleteInfo: async (req, res) => {
         res.send('Info Delete Route')
     }
-
-
-
-
 }
