@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #afafaf;
+  }
+  .nav-link {
+      color: #f8f8fa;
+  }
+  .nombre {
+  margin-bottom: 10px;
+  }
+  .logo-img {
+    width: 100px;
+    height: 75px;
+  }
+  .logoText {
+    width: 200px;
+  }
+  
