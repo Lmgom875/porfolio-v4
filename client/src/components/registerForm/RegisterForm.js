@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function RegisterForm() {
+export default function RegisterForm(props) {
   return (
     <div>
       <div className="container p-4">
@@ -14,7 +14,7 @@ export default function RegisterForm() {
                   className="form-control"
                   name="email"
                   id="inputFirstName4"
-                  //onChange={this.onChangeInput}
+                  onChange={props.onChangeInput}
                 />
               </div>
             </div>
@@ -26,7 +26,7 @@ export default function RegisterForm() {
                   className="form-control"
                   name="password"
                   id="inputLastName4"
-                  //onChange={this.onChangeInput}
+                  onChange={props.onChangeInput}
                 />
               </div>
             </div>

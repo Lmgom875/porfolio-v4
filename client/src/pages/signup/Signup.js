@@ -2,6 +2,18 @@ import React, { Component } from "react";
 import RegisterForm from "../../components/registerForm/RegisterForm";
 
 export default class Signup extends Component {
+  state = {
+    email: "",
+    password: "",
+  };
+
+  onChangeInput = (e) => {
+    console.log("change: ", e.target.name, e.target.value);
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  };
+
   render() {
     return (
       <div>
@@ -10,7 +22,7 @@ export default class Signup extends Component {
             <h1>Sign Up</h1>
           </div>
         </div>
-        <RegisterForm />
+        <RegisterForm onChangeInput={this.onChangeInput} />
       </div>
     );
   }
